@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milktea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <div class="title">
+      <h1 class="title__head">Milktea</h1>
+      <p class="title__text">
+        <span aria-hidden="true">no.1</span>
+        <span class="<visually-h></visually-h>idden">number 1</span>
+        milktea to drink
+      </p>
+    </div>
+    
+    <div class="milktea">
+      <form class="form js-milkteaForm">
+        <div class="milktea__block">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Order a milktea</legend>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="milktea" value="100" id="Regular" checked>
+              <label class="form__label" for="Regular">
+                Regular 
+                <span aria-hidden="true">/</span>
+                100
+                <span aria-hidden="true"> php</span>
+                <span class="visually-hidden">philippine peso</span>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="milktea" value="125" id="Hokaido">
+              <label class="form__label" for="Hokaido">
+                Hokaido 
+                <span aria-hidden="true">/</span>
+                125
+                <span aria-hidden="true"> php</span>
+                <span class="visually-hidden">philippine peso</span>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="milktea" value="150" id="Okinawa">
+              <label class="form__label" for="Okinawa">
+                Okinawa 
+                <span aria-hidden="true">/</span>
+                150
+                <span aria-hidden="true"> php</span>
+                <span class="visually-hidden">philippine peso</span>
+              </label>
+            </div>
+        </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Add sugar</legend>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="sugar" value="10" id="25">
+              <label class="form__label" for="25">
+                25% 
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">add</span>
+                10
+                <span aria-hidden="true"> php</span>
+                <span class="visually-hidden">philippine peso</span>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="sugar" value="20" id="50">
+              <label class="form__label" for="50">
+                50% 
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">add</span>
+                20
+                <span aria-hidden="true"> php</span>
+                <span class="visually-hidden">philippine peso</span>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="sugar" value="25" id="75">
+              <label class="form__label" for="75">
+                75% 
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">add</span>
+                25
+                <span aria-hidden="true"> php</span>
+                <span class="visually-hidden">philippine peso</span>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="sugar" value="30" id="100">
+              <label class="form__label" for="100">
+                100% 
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">add</span>
+                30
+                <span aria-hidden="true"> php</span>
+                <span class="visually-hidden">philippine peso</span>
+              </label>
+            </div>
+            <div class="form__input-container">
+              <input class="form__radio" type="radio" name="sugar" value="0" id="0" checked>
+              <label class="form__label" for="0">
+              No sugar 
+              </label>
+            </div>
+        </fieldset>
+          <button class="form__button js-addMilktea" type="button">Add milktea</button>
+        </div>
+        
+        <div class="milktea__block">
+          <div class="milktea__orders-container">
+            <h2 class="milktea__heading">
+              <span class="aria-hidden">Order/s</span>
+              <span class="visually-hidden">orders</span>
+            </h2>
+            <ul class="milktea__orders js-milktea-orders"></ul>
+          </div>
+          <div>
+            <h2 class="milktea__heading">Total
+              <span aria-hidden="true">=</span>
+              php 
+              <span class="milktea__total-price js-total-price">0</span>
+            </h2>
+          </div>
+          <div>
+            <button class="form__button" type="button">Order now</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

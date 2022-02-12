@@ -1,0 +1,142 @@
+
+/* Reset */
+ html {
+	 box-sizing: border-box;
+}
+ *, *::before, *::after {
+	 box-sizing: inherit;
+}
+/* General */
+ .visually-hidden {
+	 border: 0;
+	 clip: rect(0 0 0 0);
+	 height: 1px;
+	 margin: -1px;
+	 overflow: hidden;
+	 padding: 0;
+	 position: absolute;
+	 width: 1px;
+}
+ body {
+	 background-image: linear-gradient(135deg, #525721, #606228);
+	 font-family: 'Raleway', sans-serif;
+	 margin: 0;
+	 min-height: 100vh;
+	 padding: 4rem 1rem;
+	 position: relative;
+}
+ body::before, body::after {
+	 content: "";
+	 border-radius: 50%;
+	 background-color: #767649;
+	 position: fixed;
+}
+ body::before {
+	 height: 21.875rem;
+	 inset: -5rem -5rem auto auto;
+	 width: 21.875rem;
+}
+ body::after {
+	 height: 31.25rem;
+	 inset: auto auto -6.25rem -4rem;
+	 width: 31.25rem;
+}
+ main {
+	 position: relative;
+	 z-index: 10;
+}
+ h1, h2, h3, p {
+	 margin: 0;
+}
+ button {
+	 border: none;
+	 font-family: 'Raleway', sans-serif;
+}
+ .title {
+	 color: #fff;
+	 margin-bottom: 0.75rem;
+	 text-transform: uppercase;
+	 text-align: center;
+}
+ .title__head, .title__text {
+	 font-weight: 300;
+}
+ .title__head {
+	 font-size: 2.5rem;
+	 margin-bottom: 0.5rem;
+}
+ .title__text {
+	 font-size: 1.5rem;
+}
+ .milktea__block {
+	 background-color: #ffeebf;
+	 border-radius: 0.5rem;
+	 flex: 1 1 100%;
+	 margin-bottom: 1.5rem;
+	 padding: 1.5rem 0 2.25rem 2rem;
+}
+ .milktea__block:first-of-type {
+	 max-width: 21.25rem;
+}
+ .milktea__block:last-of-type {
+	 display: grid;
+	 grid-template-rows: auto repeat(2, max-content);
+	 gap: 1.5rem 0;
+	 max-width: 20rem;
+	 height: 31.4375rem;
+}
+ .milktea__heading {
+	 font-weight: 400;
+}
+ .milktea__orders {
+	 padding-left: 2.75rem;
+}
+ .milktea__orders-container {
+	 overflow: auto;
+}
+ .milktea__order {
+	 margin-bottom: 0.25rem;
+}
+ .milktea__total-price {
+	 font-size: 1.5rem;
+	 margin-left: 0.5rem;
+}
+ .form {
+	 display: flex;
+	 color: #525721;
+	 justify-content: center;
+	 flex-wrap: wrap;
+	 gap: 0 1rem;
+	 max-width: 42.25rem;
+	 margin: 0 auto;
+	 padding: 0;
+}
+ .form__fieldset {
+	 border: 0;
+	 margin-bottom: 1.5rem;
+	 padding: 0;
+}
+ .form__legend {
+	 font-size: 1.75rem;
+	 font-weight: 400;
+	 margin-bottom: 1rem;
+}
+ .form__input-container {
+	 font-size: 1.25rem;
+	 font-weight: 300;
+}
+ .form__input-container:not(:last-of-type) {
+	 margin-bottom: 0.625rem;
+}
+ .form__radio {
+	 margin: 0 1.25rem 0 2rem;
+}
+ .form__button {
+	 background-color: #767649;
+	 border-radius: 0.25rem;
+	 color: #fff;
+	 font-size: 1.125rem;
+	 font-weight: 300;
+	 padding: 0.75rem 1rem;
+}
+ 
